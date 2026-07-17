@@ -25,4 +25,5 @@ void UBladeAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 	
 	GroundSpeed = OwnerMovementComponent->Velocity.Size2D();
 	bIsFalling = OwnerMovementComponent->IsFalling();
+	VerticalVelocity = OwnerMovementComponent->Velocity.Z;
 }

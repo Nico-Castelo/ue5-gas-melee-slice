@@ -30,6 +30,9 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Animation")
 	bool bIsFalling = false;
 	
+	UPROPERTY(BlueprintReadOnly, Category = "Animation")
+	float VerticalVelocity = 0.0f;
+	
 	UPROPERTY(Transient)
 	TObjectPtr<ACharacter> OwnerCharacter;
 	
