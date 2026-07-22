@@ -22,21 +22,23 @@ public:
 	
 	UBladeAttributeSet();
 	
+	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, Health)
+	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, MaxHealth)
+	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, Posture)
+	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, MaxPosture)
+	
 protected:
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData Health;
-	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, Health)
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData MaxHealth;
-	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, MaxHealth)
+
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData Posture;
-	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, Posture)
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData MaxPosture;
-	ATTRIBUTE_ACCESSORS(UBladeAttributeSet, MaxPosture)
 };
